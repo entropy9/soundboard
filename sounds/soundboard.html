@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>2x5 Soundboard</title>
+<style>
+  body {
+    font-family: sans-serif;
+    background: #000;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .board {
+    display: grid;
+    grid-template-columns: repeat(5, 120px);
+    grid-gap: 20px;
+  }
+  figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 12px;
+    background: #111;
+
+    background-image: url('https://cdn-icons-png.freepik.com/512/5566/5566220.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.1s ease, filter 0.1s ease;
+  }
+  button:active {
+    transform: translateY(2px);
+    filter: brightness(1.2);
+  }
+  figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #aaa;
+  }
+</style>
+</head>
+<body>
+  <div class="board">
+    <figure>
+      <button onclick="playSound('hiThere.wav')"></button>
+      <figcaption>HiThere</figcaption>
+    </figure>
+    <figure>
+      <button onclick="playSound('excusseme.wav')"></button>
+      <figcaption>excuseme</figcaption>
+    </figure>
+    <figure>
+      <button onclick="playSound('hellocanuhearme.wav')"></button>
+      <figcaption>hellocanuhearme</figcaption>
+    </figure>
+    <figure>
+      <button onclick="playSound('makereservation1.wav')"></button>
+      <figcaption>makereservation1</figcaption>
+    </figure>
+    <figure>
+      <button onclick="playSound('ohReally.wav')"></button>
+      <figcaption>ohReally</figcaption>
+    </figure>
+    <figure>
+      <button onclick="playSound('yes.wav')"></button>
+      <figcaption>yes</figcaption>
+    </figure>
+    <figure>
+      <button onclick="playSound('whyisthat.wav')"></button>
+      <figcaption>whyisthat</figcaption>
+    </figure>
+    <figure>
+      <button onclick="playSound('wonderful.wav')"></button>
+      <figcaption>wonderful</figcaption>
+    </figure>
+    <figure>
+      <button onclick="playSound('helpmeornot.wav')"></button>
+      <figcaption>helpmeornot</figcaption>
+    </figure>
+    <figure>
+      <button onclick="playSound('whoisthis1.wav')"></button>
+      <figcaption>whoisthis1</figcaption>
+    </figure>
+
+        <figure>
+      <button onclick="playSound('what.wav')"></button>
+      <figcaption>what</figcaption>
+    </figure>
+    <figure>
+      <button onclick="playSound('whatTimesAvail.wav')"></button>
+      <figcaption>whatTimesAvail</figcaption>
+    </figure>
+    <figure>
+      <button onclick="playSound('dobadthings.wav')"></button>
+      <figcaption>dobadthings</figcaption>
+    </figure>
+    <figure>
+      <button onclick="playSound('youbetSweetheart.wav')"></button>
+      <figcaption>youbetSweetheart</figcaption>
+    </figure>
+    <figure>
+      <button onclick="playSound('gofuckyourself.wav')"></button>
+      <figcaption>gofuckyourself</figcaption>
+    </figure>
+
+        <figure>
+      <button onclick="playSound('wonderful.wav')"></button>
+      <figcaption>wonderful</figcaption>
+    </figure>
+    <figure>
+      <button onclick="playSound('yougottabekidding.wav')"></button>
+      <figcaption>yougottabekidding</figcaption>
+    </figure>
+        <figure>
+      <button onclick="playSound('listentome.wav')"></button>
+      <figcaption>listentome</figcaption>
+    </figure>
+            <figure>
+      <button onclick="playSound('youplayinwithme.wav')"></button>
+      <figcaption>youplayinwithme</figcaption>
+    </figure>
+            <figure>
+      <button onclick="playSound('tellmewhenavailable.wav')"></button>
+      <figcaption>tellmewhenavailable</figcaption>
+    </figure>
+            <figure>
+      <button onclick="playSound('breakingballs.wav')"></button>
+      <figcaption>breakingballs</figcaption>
+    </figure>
+            <figure>
+      <button onclick="playSound('breaklegs.wav')"></button>
+      <figcaption>breakyourlegs</figcaption>
+    </figure>
+                <figure>
+      <button onclick="playSound('thankyoumuch.wav')"></button>
+      <figcaption>thankyou</figcaption>
+    </figure>
+                    <figure>
+      <button onclick="playSound('thanks.wav')"></button>
+      <figcaption>thanks</figcaption>
+    </figure>
+  </div>
+
+<script>
+  function playSound(file) {
+    const audio = new Audio(file);
+    audio.play();
+  }
+</script>
+</body>
+</html>
